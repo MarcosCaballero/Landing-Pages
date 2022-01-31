@@ -15,7 +15,7 @@ function App() {
           aliquam, tempore quo!
         </p>
         <CounterContainer />
-        <a href="https:/www.github.com/MarcosCaballero" className="btn">
+        <a href="#" className="btn">
           notify me
         </a>
       </div>
