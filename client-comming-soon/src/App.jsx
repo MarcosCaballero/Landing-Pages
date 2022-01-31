@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import image1 from "./img/Create-bro.png";
 import CounterContainer from "./components/CounterContainer/CounterContainer";
@@ -15,7 +15,7 @@ function App() {
           aliquam, tempore quo!
         </p>
         <CounterContainer />
-        <a href="#" className="btn">
+        <a href="https:/www.github.com/MarcosCaballero" className="btn">
           notify me
         </a>
       </div>

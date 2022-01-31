@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 
 const CounterContainer = () => {
-  const [countDate, setCountDate] = useState(
-    new Date("feb 5, 2022 12:00:00").getTime()
-  );
-
   const [horaRestante, setHoraRestante] = useState({
     day: 0,
     hour: 0,
@@ -14,6 +10,7 @@ const CounterContainer = () => {
   });
 
   function countDown() {
+    const countDate = new Date("feb 5, 2022 12:00:00").getTime();
     let now = new Date().getTime();
     let gap = countDate - now;
 
