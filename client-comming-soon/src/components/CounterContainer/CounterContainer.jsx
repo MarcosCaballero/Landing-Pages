@@ -10,7 +10,7 @@ const CounterContainer = () => {
   });
 
   function countDown() {
-    const countDate = new Date("feb 5, 2022 12:00:00").getTime();
+    const countDate = new Date("feb 20, 2022 12:00:00").getTime();
     let now = new Date().getTime();
     let gap = countDate - now;
 
