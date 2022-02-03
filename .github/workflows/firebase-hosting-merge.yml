@@ -5,16 +5,15 @@ name: Deploy to Firebase Hosting on merge
 'on':
   push:
     branches:
-      - Client-Comming-Soon
+      - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LANDING_PAGE_F2310 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LANDING_PAGE_FOOD_APP }}'
           channelId: live
-          projectId: landing-page-f2310
+          projectId: landing-page-food-app
