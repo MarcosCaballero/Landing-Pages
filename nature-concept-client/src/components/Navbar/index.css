@@ -23,6 +23,8 @@ header nav ul {
 
 header nav ul li {
   margin: 0 20px;
+  animation: navLink 0.3s linear backwards;
+  animation-delay: calc(0.7s * var(--i));
 }
 
 header nav ul li a {
@@ -40,4 +42,10 @@ header nav ul li:last-child a {
   background-color: #308879;
   color: #fff;
   border-radius: 50px;
+}
+
+@keyframes navLink {
+  0% {
+    transform: translateY(-50px) scale(0) rotate(-45deg);
+  }
 }

@@ -10,16 +10,16 @@ const Navbar = () => {
 
       <nav>
         <ul>
-          <li style={{ i: 1 }}>
+          <li style={{ "--i": 1 }}>
             <a href="#">home</a>
           </li>
-          <li style={{ i: 2 }}>
+          <li style={{ "--i": 2 }}>
             <a href="#">about</a>
           </li>
-          <li style={{ i: 3 }}>
+          <li style={{ "--i": 3 }}>
             <a href="#">contact</a>
           </li>
-          <li style={{ i: 4 }}>
+          <li style={{ "--i": 4 }}>
             <a href="#">login</a>
           </li>
         </ul>
